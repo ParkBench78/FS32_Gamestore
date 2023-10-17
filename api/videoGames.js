@@ -33,8 +33,9 @@ router.get("/:id", async (req, res, next) => {
 });
 
 // POST - /api/video-games - create a new video game
-router.patch("/", async (req, res, next) => {
+router.post("/", async (req, res, next) => {
   try {
+    console.log(req.body);
     const videoGame = await createVideoGame(req.body);
     res.send(videoGame);
   } catch (error) {

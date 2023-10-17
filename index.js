@@ -19,7 +19,7 @@ const client = require("./db/client");
 client.connect();
 
 app.get("/", (req, res) => {
-  res.send("Hello World! from Gamestore");
+  res.send("Hello World! from Imelda's Gamestore");
 });
 
 // Router: /api

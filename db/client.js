@@ -2,7 +2,7 @@ const { Client } = require("pg");
 
 const connectionString =
   process.env.DATABASE_URL ||
-  "https://postgres:password@localhost:8080/gamestore";
+  "https://postgres:password@localhost:5432/gamestore";
 
 const client = new Client({
   connectionString,
